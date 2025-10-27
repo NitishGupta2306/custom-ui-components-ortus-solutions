@@ -50,10 +50,17 @@ function App() {
 
 ## Documentation
 
-- [Getting Started](./docs/getting-started.md)
-- [CSS Variables vs Tailwind](./docs/css-variables-vs-tailwind.md)
-- [React Components](./react/README.md)
-- [Contributing Guidelines](./CONTRIBUTING.md)
+### Getting Started
+- [Getting Started Guide](./docs/getting-started.md) - Complete setup guide for new projects
+- [CSS Variables vs Tailwind Comparison](./docs/css-variables-vs-tailwind.md) - Detailed system comparison and decision guide
+
+### System Documentation
+- [React Components Overview](./react/README.md) - Overview of both systems with installation guides
+- [CSS Variables System](./react/css-variables-system/README.md) - Complete guide for CSS Variables system
+- [Tailwind System](./react/tailwind-system/README.md) - Complete guide for Tailwind system
+
+### Contributing
+- [Contributing Guidelines](./CONTRIBUTING.md) - How to contribute to this library
 
 ## Component Catalog
 

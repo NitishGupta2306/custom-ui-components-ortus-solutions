@@ -1,0 +1,112 @@
+name: Component Issue
+description: Report a bug or request a feature for a component
+title: "[Component]: "
+labels: ["needs-triage"]
+body:
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language/Framework
+      description: Which system is this issue related to?
+      options:
+        - React (CSS Variables System)
+        - React (Tailwind System)
+        - Python
+        - Swift
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: component
+    attributes:
+      label: Component Name
+      description: Which component is this issue about?
+      placeholder: e.g., Button, AnimatedCounter, ServiceCard
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      description: What type of issue is this?
+      options:
+        - Bug Report
+        - Feature Request
+        - Documentation
+        - Performance
+        - Accessibility
+        - Question
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please provide a clear and concise description of the issue or feature request
+      placeholder: Describe what's wrong or what you'd like to see added
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce (for bugs)
+      description: If this is a bug report, please list the steps to reproduce the issue
+      placeholder: |
+        1. Import the component: `import { Button } from '...'`
+        2. Use it with these props: `<Button variant="primary">Click</Button>`
+        3. Observe the following behavior: ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: false
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Please provide relevant environment details
+      placeholder: |
+        - React version: 18.3.0
+        - TypeScript version: 5.4.0
+        - Browser: Chrome 120
+        - OS: macOS 14
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, or code snippets
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      options:
+        - label: I have searched existing issues to avoid duplicates
+          required: true
+        - label: I have provided all required information above
+          required: true
+        - label: I have read the contributing guidelines
+          required: false
